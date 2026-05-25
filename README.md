@@ -1,25 +1,26 @@
 Clinical Symptom Guidance
 
-An India-focused AI-powered healthcare triage assistant built using React, Vite, FastAPI, LangChain, and Google Gemini. The application provides structured symptom guidance, urgency assessment, and safe medical recommendations while avoiding diagnosis claims.
+An India-focused AI-powered healthcare triage assistant built using React, Vite, FastAPI, LangChain, and Google Gemini.
+The platform provides structured symptom guidance, urgency assessment, and safe medical recommendations while intentionally avoiding diagnosis claims.
 
-The platform is designed to help users better understand symptom severity and decide when to seek medical attention using professional, safety-oriented responses tailored for Indian healthcare contexts.
+The application helps users better understand symptom severity and decide when to seek medical attention using professional, safety-oriented responses tailored for Indian healthcare contexts.
 
-Features
-AI-powered structured symptom guidance
-Urgency classification:
+🚀 Features
+🤖 AI-powered structured symptom guidance
+🚨 Urgency classification system
 Low
 Medium
 High
-India-focused emergency recommendations:
+🇮🇳 India-focused emergency recommendations
 112 — National Emergency Helpline
 108 / 102 — Ambulance Services
-Safe and professional response formatting
-Avoids direct diagnosis claims
-Modern responsive UI
-FastAPI backend with REST API
-LangChain + Google Gemini integration
-Deployable on Vercel and Render
-Tech Stack
+🩺 Safe and professional medical response formatting
+❌ Avoids direct diagnosis claims
+💻 Modern responsive user interface
+⚡ FastAPI REST API backend
+🧠 LangChain + Google Gemini integration
+☁️ Deployable on Vercel and Render
+🛠️ Tech Stack
 Frontend
 React
 Vite
@@ -34,7 +35,7 @@ Google Gemini API
 Deployment
 Vercel (Frontend)
 Render (Backend)
-Folder Structure
+📁 Folder Structure
 Clinical-Symptom-Guidance/
 │
 ├── backend/
@@ -56,51 +57,46 @@ Clinical-Symptom-Guidance/
 │
 ├── README.md
 └── .gitignore
-Screenshots
-
-Add application screenshots here
-
-Home Page
-<img width="1919" height="970" alt="Screenshot 2026-05-25 175733" src="https://github.com/user-attachments/assets/5425a920-d018-4f6b-9e7a-375eed32d391" />
-
-AI Guidance Response
-<img width="1919" height="960" alt="Screenshot 2026-05-25 180500" src="https://github.com/user-attachments/assets/f5009e4c-40c0-4941-a664-84613564e367" />
-
-Environment Variables
+📸 Screenshots
+🏠 Home Page
+<img width="1919" height="970" alt="Home Page" src="https://github.com/user-attachments/assets/5425a920-d018-4f6b-9e7a-375eed32d391" />
+🤖 AI Guidance Response
+<img width="1919" height="960" alt="AI Guidance Response" src="https://github.com/user-attachments/assets/f5009e4c-40c0-4941-a664-84613564e367" />
+🔑 Environment Variables
 Backend .env
 GOOGLE_API_KEY=your_google_gemini_api_key
 Frontend .env
 VITE_API_BASE_URL=http://localhost:8000
-Backend Setup
-1. Navigate to Backend Folder
+⚙️ Backend Setup
+1️⃣ Navigate to Backend Folder
 cd backend
-2. Create Virtual Environment
+2️⃣ Create Virtual Environment
 Windows
 python -m venv venv
 venv\Scripts\activate
-Linux / Mac
+Linux / macOS
 python3 -m venv venv
 source venv/bin/activate
-3. Install Dependencies
+3️⃣ Install Dependencies
 pip install -r requirements.txt
-4. Run FastAPI Server
+4️⃣ Run FastAPI Server
 uvicorn main:app --reload
 
 Backend will run on:
 
 http://127.0.0.1:8000
-Frontend Setup
-1. Navigate to Frontend Folder
+🎨 Frontend Setup
+1️⃣ Navigate to Frontend Folder
 cd frontend
-2. Install Dependencies
+2️⃣ Install Dependencies
 npm install
-3. Start Development Server
+3️⃣ Start Development Server
 npm run dev
 
 Frontend will run on:
 
 http://localhost:5173
-API Endpoint Details
+🔌 API Endpoint Details
 Base URL
 http://localhost:8000
 POST /chat
@@ -122,37 +118,38 @@ Sample Response
   ],
   "disclaimer": "This system does not provide medical diagnosis."
 }
-Deployment
-Backend Deployment on Render
-1. Push Backend Code to GitHub
-2. Create New Web Service on Render
-Select GitHub repository
-Choose backend folder
+☁️ Deployment
+🚀 Backend Deployment on Render
+1️⃣ Push Backend Code to GitHub
+
+Push your backend project to GitHub.
+
+2️⃣ Create New Web Service on Render
+Select your GitHub repository
+Choose the backend folder
 Runtime: Python
-3. Build Command
+3️⃣ Build Command
 pip install -r requirements.txt
-4. Start Command
+4️⃣ Start Command
 uvicorn main:app --host 0.0.0.0 --port 10000
-5. Add Environment Variables
+5️⃣ Add Environment Variables
 GOOGLE_API_KEY=your_google_gemini_api_key
-Frontend Deployment on Vercel
-1. Import Project to Vercel
+🌐 Frontend Deployment on Vercel
+1️⃣ Import Project to Vercel
 Connect GitHub repository
-Select frontend folder
-2. Configure Environment Variable
+Select the frontend folder
+2️⃣ Configure Environment Variable
 VITE_API_BASE_URL=https://your-render-backend-url.onrender.com
-3. Deploy
+3️⃣ Deploy
 
 Vercel will automatically build and deploy the React application.
 
-Safety Disclaimer
-
+⚠️ Safety Disclaimer
 Important Notice
 
-Clinical Symptom Guidance is an AI-powered informational triage assistant and not a licensed medical professional.
+Clinical Symptom Guidance is an AI-powered informational triage assistant and NOT a licensed medical professional.
 
 The application:
-
 Does NOT provide medical diagnosis
 Does NOT replace doctors or emergency services
 May generate incomplete or inaccurate responses
@@ -161,24 +158,23 @@ Should only be used for general informational guidance
 Always consult a qualified healthcare professional for medical concerns.
 
 In emergencies, contact:
-
 112 — National Emergency Helpline (India)
 108 / 102 — Ambulance Services
-Future Improvements
-Multi-language Indian language support
-Voice input and speech responses
-User authentication
-Medical history tracking
-PDF medical guidance export
-Hospital recommendation integration
-Symptom severity visualization
-Conversation memory
-Rate limiting and API security
-Docker deployment support
-License
+🔮 Future Improvements
+🌍 Multi-language Indian language support
+🎤 Voice input and speech responses
+🔐 User authentication
+📋 Medical history tracking
+📄 PDF medical guidance export
+🏥 Hospital recommendation integration
+📊 Symptom severity visualization
+🧠 Conversation memory
+🚦 Rate limiting and API security
+🐳 Docker deployment support
+📜 License
 MIT License
 
 Add your license details here.
-Author
+👨‍💻 Author
 
 Developed with ❤️ using FastAPI, React, LangChain, and Google Gemini.
